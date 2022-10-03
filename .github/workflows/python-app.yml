@@ -37,8 +37,8 @@ jobs:
 
       - name: commit files
         env:
-          SOME_SECRET: ${{ secrets.SOME_SECRET }}
-          SOME_MAIL: ${{ secrets.SOME_SECRET_MAIL }}
+          SOME_SECRET: "${secrets.SOME_SECRET}"
+          SOME_MAIL: "${secrets.SOME_SECRET_MAIL}"
         run: |
           git config --global user.email $SOME_MAIL
           git config --global user.name $SOME_SECRET
