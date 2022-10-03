@@ -28,7 +28,7 @@ jobs:
           
       - name: execute py script # run main.py         
         env:
-          SECRET : ${{"nsaljnd"}}
+          SECRET : "nsaljnd"
         run:  |
           echo "Running python script"
           python main.py
