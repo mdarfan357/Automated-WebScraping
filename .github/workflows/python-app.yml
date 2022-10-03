@@ -4,9 +4,9 @@
 name: run price tracker
 
 on:
-#   workflow_dispatch 
-  schedule:
-    - cron: '0 0 * * *' # At 00:00 everyday
+  workflow_dispatch 
+#   schedule:
+#     - cron: '0 0 * * *' # At 00:00 everyday
 
 jobs:
   build:
