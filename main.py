@@ -7,8 +7,7 @@ today = date.today()
 d1 = today.strftime("%d/%m/%Y") # dd/mm/YY
 
 def create_csv():
-    url = 'https://www.amazon.in/Apple-iPhone-13-128GB-Blue/dp/B09G9BL5CP/ref=sr_1_1_sspa?crid=11TX6FU49ONC7&keywords=iphone+13&qid=1658583365&sprefix=iphone+1%2Caps%2C288&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExQUZNSDVFRENTWUMyJmVuY3J5cHRlZElkPUEwNTY0MzkzMVUwOFpCQ1hTSzBDRSZlbmNyeXB0ZWRBZElkPUEwODcyOTE2MldIV0FKM1hCR0dLVSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU='
-    url1 = 'https://www.flipkart.com/soundcore-anker-life-q10-fast-charging-bluetooth-headset/p/itmc95e0c611ba87?pid=ACCFNT7RVY8AZXBF&lid=LSTACCFNT7RVY8AZXBFRIOTVZ&marketplace=FLIPKART'
+    url1 = 'https://www.flipkart.com/apple-iphone-14-blue-512-gb/p/itm6f59f7f999d00?pid=MOBGHWFHYRWUSHCF&lid=LSTMOBGHWFHYRWUSHCFXIUNTH&marketplace=FLIPKART&q=iphone+14&store=tyy%2F4io&srno=s_1_2&otracker=search&otracker1=search&fm=search-autosuggest&iid=40d9e4bf-b8f5-47d7-810d-c5373f7d8265.MOBGHWFHYRWUSHCF.SEARCH&ppt=sp&ppn=sp&ssid=861kp9xhj40000001664802021951&qH=860f3715b8db08cd'
     req = requests.get(url1)
     soup = BeautifulSoup(req.content,'html.parser')
     price = soup.find("div",class_ = "_30jeq3 _16Jk6d")
@@ -22,8 +21,7 @@ def create_csv():
         
         
 def append_to_csv():
-    url = 'https://www.amazon.in/Apple-iPhone-13-128GB-Blue/dp/B09G9BL5CP/ref=sr_1_1_sspa?crid=11TX6FU49ONC7&keywords=iphone+13&qid=1658583365&sprefix=iphone+1%2Caps%2C288&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExQUZNSDVFRENTWUMyJmVuY3J5cHRlZElkPUEwNTY0MzkzMVUwOFpCQ1hTSzBDRSZlbmNyeXB0ZWRBZElkPUEwODcyOTE2MldIV0FKM1hCR0dLVSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU='
-    url1 = 'https://www.flipkart.com/soundcore-anker-life-q10-fast-charging-bluetooth-headset/p/itmc95e0c611ba87?pid=ACCFNT7RVY8AZXBF&lid=LSTACCFNT7RVY8AZXBFRIOTVZ&marketplace=FLIPKART'
+    url1 = 'https://www.flipkart.com/apple-iphone-14-blue-512-gb/p/itm6f59f7f999d00?pid=MOBGHWFHYRWUSHCF&lid=LSTMOBGHWFHYRWUSHCFXIUNTH&marketplace=FLIPKART&q=iphone+14&store=tyy%2F4io&srno=s_1_2&otracker=search&otracker1=search&fm=search-autosuggest&iid=40d9e4bf-b8f5-47d7-810d-c5373f7d8265.MOBGHWFHYRWUSHCF.SEARCH&ppt=sp&ppn=sp&ssid=861kp9xhj40000001664802021951&qH=860f3715b8db08cd'
     req = requests.get(url1)
     soup = BeautifulSoup(req.content,'html.parser')
     # prices = soup.find_all(text = "₹")
@@ -35,8 +33,8 @@ def append_to_csv():
         mywriter = writer(f)
         mywriter.writerow([d1,price])
 
-url = 'https://www.amazon.in/Apple-iPhone-13-128GB-Blue/dp/B09G9BL5CP/ref=sr_1_1_sspa?crid=11TX6FU49ONC7&keywords=iphone+13&qid=1658583365&sprefix=iphone+1%2Caps%2C288&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExQUZNSDVFRENTWUMyJmVuY3J5cHRlZElkPUEwNTY0MzkzMVUwOFpCQ1hTSzBDRSZlbmNyeXB0ZWRBZElkPUEwODcyOTE2MldIV0FKM1hCR0dLVSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU='
-url1 = 'https://www.flipkart.com/soundcore-anker-life-q10-fast-charging-bluetooth-headset/p/itmc95e0c611ba87?pid=ACCFNT7RVY8AZXBF&lid=LSTACCFNT7RVY8AZXBFRIOTVZ&marketplace=FLIPKART'
+
+url1 = 'https://www.flipkart.com/apple-iphone-14-blue-512-gb/p/itm6f59f7f999d00?pid=MOBGHWFHYRWUSHCF&lid=LSTMOBGHWFHYRWUSHCFXIUNTH&marketplace=FLIPKART&q=iphone+14&store=tyy%2F4io&srno=s_1_2&otracker=search&otracker1=search&fm=search-autosuggest&iid=40d9e4bf-b8f5-47d7-810d-c5373f7d8265.MOBGHWFHYRWUSHCF.SEARCH&ppt=sp&ppn=sp&ssid=861kp9xhj40000001664802021951&qH=860f3715b8db08cd'
 req = requests.get(url1)
 soup = BeautifulSoup(req.content,'html.parser')
 # prices = soup.find_all(text = "₹")
