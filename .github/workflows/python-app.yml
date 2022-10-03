@@ -26,32 +26,17 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           
-      - name: execute py script # run main.py         
-        env:
-          SECRET : "nsaljnd"
+      - name: execute python script # run main.py         
         run:  |
           echo "Running python script"
           python main.py
-          echo $SECRET
-          
 
       - name: commit files
-        env:
-          SOME_SECRET: "${secrets.SOME_SECRET}"
-          SOME_MAIL: "${secrets.SOME_SECRET_MAIL}"
         run: |
-          git config --global user.email $SOME_MAIL
-          git config --global user.name $SOME_SECRET
+          git config --global user.email "mdarfan357@gmail.com"
+          git config --global user.name "Mohammed Arfan"
           git status
           git add . 
           git commit -m "log update"
-          echo $SOME_SECRET
-#           git add -A
-#           git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
+    
 
-          
-#       - name: push changes
-#         uses: ad-m/github-push-action@v0.6.0
-#         with:
-#           github_token: ${{ secrets.SOME_GITHUB_TOKEN }}
-#           branch: main 
