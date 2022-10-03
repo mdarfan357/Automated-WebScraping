@@ -34,13 +34,18 @@ jobs:
         run:  |
           echo "Running python script"
           python main.py
+          
 
       - name: commit files
         run: |
           git config --local user.email $SOME_MAIL
           git config --local user.name $SOME_SECRET
-          git add -A
+          git status
+          git add . 
+          git commit -m "log update"
+#           git add -A
 #           git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
+
           
       - name: push changes
         uses: ad-m/github-push-action@v0.6.0
