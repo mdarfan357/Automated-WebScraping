@@ -80,7 +80,8 @@ def check_header():
           print(f"Got header : {i}")
           break
             
-   
+   amz_price = amz_price.string.replace("₹",'').replace(',','')
+   amz_price = int(float(amz_price))
    flip_price = get_price_from_flipkart()      
    append_to_csv(amz_price,flip_price)
 
