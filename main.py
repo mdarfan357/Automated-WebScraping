@@ -60,12 +60,17 @@ def append_to_csv():
         mywriter.writerow([d1,amz_price,flip_price])
      
 def check_header():
+   itt = 1
    for i in poss_headers:
       price = get_price_from_amazon() 
       if price == None:
          HEADERS["User-Agent"] = i
+         print(itt)
+         itt+=1
       else:
           print(price)
           break
+
+check_header
      
             
