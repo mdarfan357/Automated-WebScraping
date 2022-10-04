@@ -12,7 +12,8 @@ def get_price_from_amazon():
     url2 = "https://www.amazon.in/Apple-iPhone-14-512GB-Blue/dp/B0BDJH3V3Q/ref=sr_1_8?keywords=iphone+14&qid=1664871745&qu=eyJxc2MiOiI1LjM4IiwicXNhIjoiNS4xOSIsInFzcCI6IjMuMzcifQ%3D%3D&sr=8-8"
     req = requests.get(url2, headers=HEADERS)
     soup = BeautifulSoup(req.content,'lxml')
-    # prices = soup.find_all(text = "₹")
+    print(soup)
+    print("_________________________________________________")
     price = soup.find("span",class_ = "a-offscreen")
     price = price.string.replace("₹",'').replace(',','')
     price = int(float(price)) # gets current price
