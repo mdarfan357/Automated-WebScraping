@@ -73,14 +73,18 @@ def append_to_csv():
 def check_header():
    itt = 1
    for i in poss_headers:
-      price = get_price_from_amazon_test() 
-      if price == None:
+      amz_price = get_price_from_amazon_test() 
+      if amz_price == None:
          HEADERS["User-Agent"] = i
          print(itt)
          itt+=1
       else:
           print(f"Got header : {i}")
           break
+            
+   
+   flip_price = get_price_from_flipkart()      
+   append_to_csv()
 
 check_header()
      
