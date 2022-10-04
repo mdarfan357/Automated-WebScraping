@@ -71,6 +71,6 @@ def check_header():
           print(price)
           break
 
-check_header
+check_header()
      
             
