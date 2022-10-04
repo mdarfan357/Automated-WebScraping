@@ -75,7 +75,7 @@ def check_header():
          print(itt)
          itt+=1
       else:
-          print(price)
+          print(f"Got header : {i}")
           break
 
 check_header()
