@@ -27,17 +27,7 @@ jobs:
           pip install -r requirements.txt
           
       - name: execute python script # run main.py         
-        run:  |
-          echo "Running python script"
-          python main.py
-
-#       - name: commit files
-#         run: |
-#           git config --global user.email "mdarfan357@gmail.com"
-#           git config --global user.name "Mohammed Arfan"
-#           git status
-#           git add . 
-#           git commit -m "log update"
+        run: python main.py
 
       - name: commit files
         run: |
