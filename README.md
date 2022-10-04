@@ -1,5 +1,6 @@
 # price_track
-Problem : 
+
+### Problem : 
 In todays world products are available in many websites and these prices change daily. Due to these complexities it becomes overwhelming for a consumer to take smart decisions about their needs. In order to save users money and make it simple for any user to buy products on eCommerce platforms I have created an application that lets users track there products prices.
 
 ### CI/CD
