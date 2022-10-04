@@ -5,7 +5,7 @@ from csv import writer
 
 today = date.today()
 d1 = today.strftime("%d/%m/%Y") # dd/mm/YY
-HEADERS = {'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36',
+HEADERS = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
             'Accept-Language': 'en-US, en;q=0.5'}
 
 def get_price_from_amazon():
