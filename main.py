@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import date
 from csv import writer
+import time
 
 today = date.today()
 d1 = today.strftime("%d/%m/%Y") # dd/mm/YY
@@ -22,9 +23,11 @@ HEADERS = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/5
 def get_price_from_amazon():
     url2 = "https://www.amazon.in/Apple-iPhone-14-512GB-Blue/dp/B0BDJH3V3Q/ref=sr_1_8?keywords=iphone+14&qid=1664871745&qu=eyJxc2MiOiI1LjM4IiwicXNhIjoiNS4xOSIsInFzcCI6IjMuMzcifQ%3D%3D&sr=8-8"
     req = requests.get(url2, headers=HEADERS)
+    time.sleep(4)
     soup = BeautifulSoup(req.content,'lxml')
     print(soup)
     print("_________________________________________________")
+    time.sleep(4)
     price = soup.find("span",class_ = "a-offscreen")
     price = price.string.replace("₹",'').replace(',','')
     price = int(float(price)) # gets current price
@@ -33,6 +36,7 @@ def get_price_from_amazon():
 def get_price_from_amazon_test():
     url2 = "https://www.amazon.in/Apple-iPhone-14-512GB-Blue/dp/B0BDJH3V3Q/ref=sr_1_8?keywords=iphone+14&qid=1664871745&qu=eyJxc2MiOiI1LjM4IiwicXNhIjoiNS4xOSIsInFzcCI6IjMuMzcifQ%3D%3D&sr=8-8"
     req = requests.get(url2, headers=HEADERS)
+    time.sleep(4)
     soup = BeautifulSoup(req.content,'lxml')
     price = soup.find("span",class_ = "a-offscreen")
     return price
