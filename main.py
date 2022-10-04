@@ -62,10 +62,8 @@ def create_csv():
         mywriter.writerow([d1,amz_price,flip_price])
         
         
-def append_to_csv():
-    amz_price = get_price_from_amazon()
-    flip_price = get_price_from_flipkart()
-
+def append_to_csv(amz_price,flip_price):
+   
     with open("price_track.csv",'a',encoding="utf8",newline="") as f:
         mywriter = writer(f)
         mywriter.writerow([d1,amz_price,flip_price])
@@ -84,7 +82,7 @@ def check_header():
             
    
    flip_price = get_price_from_flipkart()      
-   append_to_csv()
+   append_to_csv(amz_price,flip_price)
 
 check_header()
      
