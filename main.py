@@ -83,6 +83,9 @@ def check_header():
           flip_price = get_price_from_flipkart()      
           append_to_csv(amz_price,flip_price)
           break
+      else:
+            print(f"New Item : {amz_prize}")
+            break
             
    
    
