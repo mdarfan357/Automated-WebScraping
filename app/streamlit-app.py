@@ -8,6 +8,6 @@ import seaborn as sns
 os.chdir("../price_track")
 st.write("Price Tracker")
 data = pd.read_csv("price_track.csv")
-st.write(data)
+st.write(data.pop("Date"))
 st.line_chart(data.pop("Date"))
 st.button("Refresh")
