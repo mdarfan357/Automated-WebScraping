@@ -76,7 +76,7 @@ def check_header():
          HEADERS["User-Agent"] = i
          print(itt)
          itt+=1
-      if amz_price != None:
+      elif amz_price != None:
           print(f"Got header : {i}")
           amz_price = amz_price.string.replace("₹",'').replace(',','')
           amz_price = int(float(amz_price))
