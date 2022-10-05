@@ -9,3 +9,4 @@ path = "mdarfan357/price_track/edit/main/app"
 os.chdir("../price_track")
 st.write("Hello World")
 st.write(os. getcwd())
+st.write(os.listdir())
