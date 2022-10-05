@@ -7,9 +7,8 @@ import os
 path = "mdarfan357/price_track/edit/main/app"
 
 os.chdir("../price_track")
-st.write("Hello World")
-st.write(os. getcwd())
-st.write(os.listdir())
+st.write("Price Tracker")
+# st.write(os. getcwd())
 data = pd.read_csv("price_track.csv")
 st.write(data)
 st.button("Refresh")
