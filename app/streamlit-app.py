@@ -52,13 +52,17 @@ with mid:
    st.image("https://media0.giphy.com/media/R6gvnAxj2ISzJdbA63/giphy.gif?cid=511e7ad3cmz597iamlotymrf0egpx8ew3xkz592tbj9r40d0&rid=giphy.gif&ct=g",width=400)
 
 
-st.markdown("<p style='text-align: center;'>Please leave a like if you liked the website and share it with your friends.</p>", unsafe_allow_html=True)
+# st.markdown("<p style='text-align: center;'></p>", unsafe_allow_html=True)
 _left2, mid2, _right2 = st.columns(3)
-with mid2:
+with _right2:
       but = st.button("Like")
       if but:
          st.balloons()
          st.write("Appreciate it :)")
+ with _left2:
+  st.write("Please leave a like if you liked the website and share it with your friends.")
+  
+  
         
 
 
