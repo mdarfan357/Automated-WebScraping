@@ -44,9 +44,14 @@ st.write("Also keep in touch with the official websites [Amazon](https://www.ama
 st.write("--------------")
 
 
-st.markdown("<img style='text-align: center;'>https://media0.giphy.com/media/R6gvnAxj2ISzJdbA63/giphy.gif?cid=511e7ad3cmz597iamlotymrf0egpx8ew3xkz592tbj9r40d0&rid=giphy.gif&ct=g</img>", unsafe_allow_html=True)
-# st.imagest.write("Please leave a like if you liked the website and share it with your friends.")
+# st.markdown("<img style='text-align: center;'>https://media0.giphy.com/media/R6gvnAxj2ISzJdbA63/giphy.gif?cid=511e7ad3cmz597iamlotymrf0egpx8ew3xkz592tbj9r40d0&rid=giphy.gif&ct=g</img>", unsafe_allow_html=True)
+st.image("https://media0.giphy.com/media/R6gvnAxj2ISzJdbA63/giphy.gif?cid=511e7ad3cmz597iamlotymrf0egpx8ew3xkz592tbj9r40d0&rid=giphy.gif&ct=g",width=100)
+st.image("https://media0.giphy.com/media/R6gvnAxj2ISzJdbA63/giphy.gif?cid=511e7ad3cmz597iamlotymrf0egpx8ew3xkz592tbj9r40d0&rid=giphy.gif&ct=g")
+st.write("Please leave a like if you liked the website and share it with your friends.")
 
+_left, mid, _right = st.columns(3)
+with mid:
+   st.image("https://media0.giphy.com/media/R6gvnAxj2ISzJdbA63/giphy.gif?cid=511e7ad3cmz597iamlotymrf0egpx8ew3xkz592tbj9r40d0&rid=giphy.gif&ct=g")
     
 but = st.button("Like")
 if but:
