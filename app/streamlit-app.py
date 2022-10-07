@@ -6,7 +6,7 @@ import os
 import seaborn as sns
 
 os.chdir("../price_track")
-st.write("Price Tracker")
+st.write("## Price Tracker")
 data = pd.read_csv("price_track.csv")
 data1 = data.drop(columns = ["Date"])
 st.write(data)
