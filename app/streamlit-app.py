@@ -7,7 +7,10 @@ import seaborn as sns
 
 os.chdir("../price_track")
 st.write("## Price Tracker")
-st.write("Here we use data collected from websites to display trends in product prices.\n These help people take better descion about the product they wanna buy and the time at which they want to buy the product")
+st.write("Here we use data collected from websites to display trends in product prices.")
+st.write("These help people take better descion about the product they wanna buy and the time at which they want to buy the product")
+
+st.write("#### Dataset :")
 data = pd.read_csv("price_track.csv")
 data1 = data.drop(columns = ["Date"])
 st.write(data)
