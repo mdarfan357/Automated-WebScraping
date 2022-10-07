@@ -37,7 +37,7 @@ if latest_amz > latest_flip:
   st.write("Flipkart has the lowest price for the following product.")
 else:
   st.write("Both websites have the same price for the following product.")
-  
+  st. markdown("<p style='text-align: center;'>Both websites have the same price for the following product.</p>", unsafe_allow_html=True)
 st.write("To know more about the next sale check out this [link](https://www.newindianexpress.com/expressdeals/other-categories/amazon-upcoming-sale-in-india/218.html)")
 st.write("Also keep in touch with the official websites [Amazon](https://www.amazon.in/), [Flipkart](https://www.flipkart.com/)")
 
