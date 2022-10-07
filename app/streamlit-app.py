@@ -59,9 +59,9 @@ st.write("Please leave a like if you liked the website and share it with your fr
 l1,l2,mid,r1,r2,r3,r4,r5,r6,r7 = st.columns(10)
 with r7:
    but = st.button("Like")
-   if but:
-       st.balloons()
-       st.write("Appreciate it :)")
+if but:
+   st.balloons()
+   st.write("Appreciate it :)")
   
   
         
