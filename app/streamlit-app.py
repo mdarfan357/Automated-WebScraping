@@ -27,4 +27,4 @@ st.area_chart(data1)
 st. markdown("<h3 style='text-align: center;'>This is a bar chart</h3>", unsafe_allow_html=True)
 st.bar_chart(data1)
 
-st.write(data1[:-1])
+st.write(data1[-1:])
