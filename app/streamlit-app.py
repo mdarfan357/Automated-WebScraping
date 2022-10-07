@@ -20,10 +20,10 @@ st.write(data)
 
 
 # st.subheader("")
-st. markdown("<h2 style='text-align: center; color: white;'>This is a line chart</h2>", unsafe_allow_html=True)
+st. markdown("<h3 style='text-align: center; color: white;'>This is a line chart</h3>", unsafe_allow_html=True)
 st.line_chart(data1)  
-st. markdown("<h2 style='text-align: center; color: white;'>This is a area chart</h2>", unsafe_allow_html=True)
+st. markdown("<h3 style='text-align: center; color: white;'>This is a area chart</h3>", unsafe_allow_html=True)
 st.area_chart(data1)
-st. markdown("<h2 style='text-align: center; color: white;'>This is a bar chart</h2>", unsafe_allow_html=True)
+st. markdown("<h3 style='text-align: center; color: white;'>This is a bar chart</h3>", unsafe_allow_html=True)
 st.bar_chart(data1)
 
