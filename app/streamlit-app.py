@@ -19,10 +19,11 @@ st.write(data)
 # st.button("Refresh")
 
 
-st.subheader("This is a line chart")
+# st.subheader("")
+st. markdown("<h2 style='text-align: center; color: white;'>This is a line chart</h2>", unsafe_allow_html=True)
 st.line_chart(data1)  
-st.subheader("This is a area chart")
+st. markdown("<h2 style='text-align: center; color: white;'>This is a area chart</h2>", unsafe_allow_html=True)
 st.area_chart(data1)
-st.subheader("This is a bar chart")
+st. markdown("<h2 style='text-align: center; color: white;'>This is a bar chart</h2>", unsafe_allow_html=True)
 st.bar_chart(data1)
 
