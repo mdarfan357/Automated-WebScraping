@@ -47,7 +47,7 @@ st.write("----------------------------------------------------")
 # st.markdown("<img style='text-align: center;'>https://media0.giphy.com/media/R6gvnAxj2ISzJdbA63/giphy.gif?cid=511e7ad3cmz597iamlotymrf0egpx8ew3xkz592tbj9r40d0&rid=giphy.gif&ct=g</img>", unsafe_allow_html=True)
 
 
-_left, mid, _right = st.columns(3)
+_left, mid, _right,r1,r2 = st.columns(5)
 with mid:
    st.image("https://media0.giphy.com/media/R6gvnAxj2ISzJdbA63/giphy.gif?cid=511e7ad3cmz597iamlotymrf0egpx8ew3xkz592tbj9r40d0&rid=giphy.gif&ct=g",width=400)
 
