@@ -8,6 +8,7 @@ import seaborn as sns
 os.chdir("../price_track")
 
 st. markdown("<h1 style='text-align: center;'>Price Tracker</h1>", unsafe_allow_html=True)
+st.image("https://editor.analyticsvidhya.com/uploads/80484Thumbnail.png")
 st.write("Here we use data collected from websites to display trends in product prices.")
 st.write("These help people take better descion about the product they wanna buy and the time at which they want to buy the product")
 
