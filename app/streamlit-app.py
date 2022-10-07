@@ -55,12 +55,12 @@ with mid:
 # st.markdown("<p style='text-align: center;'></p>", unsafe_allow_html=True)
 _left2, mid2, _right2 = st.columns(3)
 with _right2:
-      but = st.button("Like")
-      if but:
-         st.balloons()
-         st.write("Appreciate it :)")
- with _left2:
-  st.write("Please leave a like if you liked the website and share it with your friends.")
+   but = st.button("Like")
+   if but:
+       st.balloons()
+       st.write("Appreciate it :)")
+with _left2:
+   st.write("Please leave a like if you liked the website and share it with your friends.")
   
   
         
