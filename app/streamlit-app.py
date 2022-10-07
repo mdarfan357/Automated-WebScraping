@@ -39,6 +39,6 @@ else:
   st.write("Both websites have the same price for the following product.")
   
 st.write("To know more about the next sale check out this [link](https://www.newindianexpress.com/expressdeals/other-categories/amazon-upcoming-sale-in-india/218.html)")
-st.write("Also keep in touch with the official website [Amazon](https://www.amazon.in/) [Flipkart](https://www.flipkart.com/)")
+st.write("Also keep in touch with the official websites [Amazon](https://www.amazon.in/), [Flipkart](https://www.flipkart.com/)")
 
  
