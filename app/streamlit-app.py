@@ -53,14 +53,15 @@ with mid:
 
 
 # st.markdown("<p style='text-align: center;'></p>", unsafe_allow_html=True)
-_left2, mid2, _right2 = st.columns(3)
-with _right2:
+
+st.write("Please leave a like if you liked the website and share it with your friends.")
+
+l1,l2,mid,r1,r2 = st.columns(5)
+with r2:
    but = st.button("Like")
    if but:
        st.balloons()
        st.write("Appreciate it :)")
-with _left2:
-   st.write("Please leave a like if you liked the website and share it with your friends.")
   
   
         
