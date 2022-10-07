@@ -27,4 +27,16 @@ st.area_chart(data1)
 st. markdown("<h3 style='text-align: center;'>This is a bar chart</h3>", unsafe_allow_html=True)
 st.bar_chart(data1)
 
-st.write(int(data1[-1:]["Amazon price"]))
+st.write()
+latest_amz = int(data1[-1:]["Amazon price"])
+latest_flip = int(data1[-1:]["Flipkart price"])
+
+if latest_amz > latest_flip:
+  st.write("Amazon has the least price for the following product.")
+if latest_amz > latest_flip:
+  st.write("Flipkart has the lowest price for the following product.")
+else:
+  st.write("Both websites have the same price for the following product.")
+  
+  
+ 
