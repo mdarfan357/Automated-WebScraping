@@ -4,7 +4,7 @@
 In todays world products are available in many websites and these prices change daily with time. Due to these complexities it becomes overwhelming for an ordinary consumer to take smart decisions about their needs. In order to save users money and make it simple for any user to buy products on eCommerce platforms I have created an application that lets users track there products prices.
 
 --------------- 
-CI/CD
+### CI/CD
 
 CI/CD (Continuous Integration and Continuous Deployment) is one of the important topics in software development. CI/CD is a method to frequently deliver apps to customers by introducing automation into the stages of app development. The main concepts attributed to CI/CD are continuous integration, continuous delivery, and continuous deployment. CI/CD is a solution to the problems integrating new code can cause for development and operations teams (AKA "integration hell").
 
