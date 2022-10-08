@@ -33,7 +33,7 @@ jobs:
       - name: execute python script # run main.py      
         run: |
            python main.py
-           "lansdlnalsdn"
+
         
       - name: commit files
         run: |
