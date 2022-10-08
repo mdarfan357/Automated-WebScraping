@@ -39,7 +39,7 @@ jobs:
       
 
   job2:
-    if :  ${{ job1 == success() }}
+    if :  success()
     runs-on: windows-latest 
     steps:
       - name : Hello
