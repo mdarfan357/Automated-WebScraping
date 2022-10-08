@@ -12,7 +12,7 @@ CI/CD (Continuous Integration and Continuous Deployment) is one of the important
 CI means new code changes to an app are regularly built, tested, and merged to a shared repository. It’s a solution to the problem of having too many branches of an app in development at once that might conflict with each other.CD means developer’s changes to an application are automatically bug tested and uploaded to a repository.
 
 --------------- 
-### Solution
+### Solution :
 
 In this project I have tried to use these concepts to built an app that gets data from an eCommerce website daily using CI/CD and the app displays the data pictorially in order to take better decisions about purchasing products. 
 
@@ -33,9 +33,3 @@ The skills used in this project are:
 * github actions 
 * editing and understanding .yml / .yaml files 
 
-
-
- Markup : * Bullet list
-              * Nested bullet
-                  * Sub-nested bullet etc
-          * Bullet list item 2
