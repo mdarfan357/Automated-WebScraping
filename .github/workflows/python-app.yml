@@ -31,8 +31,22 @@ jobs:
           pip install -r requirements.txt
           
       - name: execute python script # run main.py      
-        continue-on-error: true
-        run: python main.py
+        run: |
+           python main.py
+           "lansdlnalsdn"
+        
+      - name: commit files
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git add -A
+          git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
+
+      - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.SOME_GITHUB_TOKEN }}
+          branch: main
       
 
       
@@ -59,14 +73,7 @@ jobs:
       - name: execute python script # run main.py      
         continue-on-error: true
         run: python main.py
- 
-  job3:
-    
-    if: ${{ always() }}
-    needs: [job1, job2]
-    
-    runs-on: windows-latest 
-    steps:
+        
       - name: commit files
         run: |
           git config --global user.email "action@github.com"
@@ -79,4 +86,7 @@ jobs:
         with:
           github_token: ${{ secrets.SOME_GITHUB_TOKEN }}
           branch: main
+ 
+ 
+      
     
