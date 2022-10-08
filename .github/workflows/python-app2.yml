@@ -9,8 +9,12 @@ on:
      - cron: '0 0 * * *' # At 00:00 everyday
 
 jobs:
-  build:
+
+  job1:
+  
     runs-on: windows-latest
+    
+    
     steps:
 
       - name: checkout repo content
@@ -26,23 +30,57 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           
-      - name: execute python script # run main.py         
-        run: python main.py
-
+      - name: execute python script # run main.py      
+        run: |
+           python main.py
+           "lansdlnalsdn"
+        
       - name: commit files
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
           git add -A
           git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
-          
       - name: push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.SOME_GITHUB_TOKEN }}
           branch: main
+      
+
+      
+
+  job2:
+    needs : job1
+    if :  failure()
+    runs-on: windows-latest 
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v2 # checkout the repository content to github runner
+
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9' # install the python version needed
           
-    
-
-    
-
+      - name: install python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          echo "running job1"
+          
+      - name: execute python script # run main.py      
+        continue-on-error: true
+        run: python main.py
+        
+      - name: commit files
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git add -A
+          git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
+      - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.SOME_GITHUB_TOKEN }}
+          branch: main
