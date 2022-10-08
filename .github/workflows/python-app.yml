@@ -1,21 +1,17 @@
-      
+
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
-name: price tracker (Manuel)
+name: price tracker (Automatic) 
 
 on:
-  workflow_dispatch 
-#    schedule:
-#      - cron: '0 0 * * *' # At 00:00 everyday
+#   workflow_dispatch 
+   schedule:
+     - cron: '0 0 * * *' # At 00:00 everyday
 
 jobs:
-
-  job1:
-  
+  build:
     runs-on: windows-latest
-    
-    
     steps:
 
       - name: checkout repo content
@@ -30,42 +26,21 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          echo "running job1"
           
-      - name: execute python script # run main.py      
-        continue-on-error: true
+      - name: execute python script # run main.py         
         run: python main.py
-      
 
-      
-
-  job2:
-    if : jobs.job1 == success()
-    runs-on: windows-latest 
-    steps:
-      - name : Hello
-        run : job1
- 
-  job3:
-    
-    if: ${{ always() }}
-    needs: [job1, job2]
-    
-    runs-on: windows-latest 
-    steps:
       - name: commit files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
           git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
-
+          
       - name: push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.SOME_GITHUB_TOKEN }}
           branch: main
+          
     
-
-    
-
