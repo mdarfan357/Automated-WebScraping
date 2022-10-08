@@ -6,7 +6,7 @@ name: price tracker (Automatic)
 on:
 #   workflow_dispatch 
    schedule:
-     - cron: '0 0,12 * * *' # At 00:00 everyday
+     - cron: '0 0 * * *' # At 00:00 everyday
 
 jobs:
   build:
@@ -41,4 +41,5 @@ jobs:
         with:
           github_token: ${{ secrets.SOME_GITHUB_TOKEN }}
           branch: main
+          
     
