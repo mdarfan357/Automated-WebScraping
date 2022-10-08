@@ -24,7 +24,7 @@ Check out the current price at Flipkart [click here](https://www.flipkart.com/ap
 
 The data from these websites are collected and stored in the [prices_track.csv](../main/price_track.csv) file and this data is sent to the webapp for data visualization.
 
-Do visit the website [website](https://mdarfan357-price-track-appstreamlit-app-tr1vmx.streamlitapp.com/)
+Do visit the [website](https://mdarfan357-price-track-appstreamlit-app-tr1vmx.streamlitapp.com/) to see the front end of the project
 
 The skills used in this project are:
 * python
