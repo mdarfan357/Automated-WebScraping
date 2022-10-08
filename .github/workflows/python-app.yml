@@ -38,6 +38,7 @@ jobs:
       
 
   job2:
+    needs : job1
     if :  failure()
     runs-on: windows-latest 
     steps:
