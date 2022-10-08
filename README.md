@@ -12,6 +12,7 @@ CI/CD (Continuous Integration and Continuous Deployment) is one of the important
 CI means new code changes to an app are regularly built, tested, and merged to a shared repository. It’s a solution to the problem of having too many branches of an app in development at once that might conflict with each other.CD means developer’s changes to an application are automatically bug tested and uploaded to a repository.
 
 --------------- 
+### Solution
 
 In this project I have tried to use these concepts to built an app that gets data from an eCommerce website daily using CI/CD and the app displays the data pictorially in order to take better decisions about purchasing products. 
 
@@ -23,7 +24,7 @@ Check out the current price at Flipkart [click here](https://www.flipkart.com/ap
 
 The data from these websites are collected and stored in the [prices_track.csv](../main/price_track.csv) file and this data is sent to the webapp for data visualization.
 
-[Link to the webapp](https://mdarfan357-price-track-appstreamlit-app-tr1vmx.streamlitapp.com/)
+Do visit the website [website](https://mdarfan357-price-track-appstreamlit-app-tr1vmx.streamlitapp.com/)
 
 The skills used in this project are:
 * python
