@@ -34,6 +34,7 @@ The data from these websites are collected and stored in the [prices_track.csv](
 Do visit the [web application](https://mdarfan357-price-track-appstreamlit-app-tr1vmx.streamlitapp.com/) to see the frontend of the project
 
 The skills used in this project are:
+--------------- 
 * python
 * web scraping using beautifulsoup
 * front end using streamlit 
