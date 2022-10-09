@@ -29,8 +29,10 @@ Do visit the [website](https://mdarfan357-price-track-appstreamlit-app-tr1vmx.st
 The skills used in this project are:
 * python
 * web scraping using beautifulsoup
-* streamlit 
-* git / github
-* github actions 
-* editing and understanding .yml / .yaml files 
+* front end using streamlit 
+* git / github for pushing and pulling data to the cloud repo
+* github actions to run tasks daily 
+* .yml / .yaml files to configure tasks that are run daily 
+
+
 
