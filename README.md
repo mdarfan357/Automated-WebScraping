@@ -22,8 +22,9 @@ In this project I have taken an example of the iPhone 14 but these methods can b
 
 The part that I love about this project is that all the components of this project are build from scratch, the data is collected daily and the data is merged together with the old data using github actions and python. we stored all the data in a csv file.
 
---------------- 
+
 ### Documentation :
+--------------- 
 Check out the current price at Amazon [click here](https://www.amazon.in/Apple-iPhone-14-512GB-Blue/dp/B0BDJH3V3Q/ref=sr_1_8?keywords=iphone+14&qid=1664871745&qu=eyJxc2MiOiI1LjM4IiwicXNhIjoiNS4xOSIsInFzcCI6IjMuMzcifQ%3D%3D&sr=8-8)
 
 Check out the current price at Flipkart [click here](https://www.flipkart.com/apple-iphone-14-blue-512-gb/p/itm6f59f7f999d00?pid=MOBGHWFHYRWUSHCF&lid=LSTMOBGHWFHYRWUSHCFXIUNTH&marketplace=FLIPKART&q=iphone+14&store=tyy%2F4io&srno=s_1_2&otracker=search&otracker1=search&fm=search-autosuggest&iid=40d9e4bf-b8f5-47d7-810d-c5373f7d8265.MOBGHWFHYRWUSHCF.SEARCH&ppt=sp&ppn=sp&ssid=861kp9xhj40000001664802021951&qH=860f3715b8db08cd)
