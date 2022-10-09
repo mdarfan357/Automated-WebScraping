@@ -1,6 +1,6 @@
 # price_track
 
-### Problem : 
+## Problem 
 In todays world products are available in many websites and these prices change daily with time. Due to these complexities it becomes overwhelming for an ordinary consumer to take smart decisions about their needs. In order to save users money and make it simple for any user to buy products on eCommerce platforms I have created an application that lets users track there products prices.
 
 
@@ -33,7 +33,7 @@ The data from these websites are collected and stored in the [prices_track.csv](
 
 Do visit the [web application](https://mdarfan357-price-track-appstreamlit-app-tr1vmx.streamlitapp.com/) to see the frontend of the project
 
-The skills used in this project are:
+The skills used in this project :
 --------------- 
 * python
 * web scraping using beautifulsoup
