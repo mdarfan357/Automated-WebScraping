@@ -18,6 +18,7 @@ In this project I have tried to use these concepts to built an app that gets dat
 
 In this project I have taken an example of the iPhone 14 but these methods can be applied to any product.
 
+The part that I love about this project is that all the components of this project are build from scratch, the data is collected daily and the data is merged together with the old data using github actions and python. we stored all the data in a csv file.
 --------------- 
 ### Documentation :
 Check out the current price at Amazon [click here](https://www.amazon.in/Apple-iPhone-14-512GB-Blue/dp/B0BDJH3V3Q/ref=sr_1_8?keywords=iphone+14&qid=1664871745&qu=eyJxc2MiOiI1LjM4IiwicXNhIjoiNS4xOSIsInFzcCI6IjMuMzcifQ%3D%3D&sr=8-8)
