@@ -42,5 +42,10 @@ The skills used in this project :
 * github actions to run tasks daily 
 * .yml / .yaml files to configure tasks that are run daily 
 
+Issues :
+---------------
+The only issue with this project would be its Scalability. In order to prepare a dataset that has all the products hosted on an eCommerce website that an ordinary consumer would need one would require a lot of computational resources which is not available to me as a student. Most of the resources used in this project is free.
+
+
 
 
