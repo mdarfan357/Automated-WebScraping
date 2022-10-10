@@ -21,20 +21,7 @@ HEADERS = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/5
             'Accept-Language': 'en-US, en;q=0.5'}
 
 def get_price_from_amazon():
-    url2 = "https://www.amazon.in/Apple-iPhone-14-512GB-Blue/dp/B0BDJH3V3Q/ref=sr_1_8?keywords=iphone+14&qid=1664871745&qu=eyJxc2MiOiI1LjM4IiwicXNhIjoiNS4xOSIsInFzcCI6IjMuMzcifQ%3D%3D&sr=8-8"
-    req = requests.get(url2, headers=HEADERS)
-    time.sleep(4)
-    soup = BeautifulSoup(req.content,'lxml')
-    print(soup)
-    print("_________________________________________________")
-    time.sleep(4)
-    price = soup.find("span",class_ = "a-offscreen")
-    price = price.string.replace("₹",'').replace(',','')
-    price = int(float(price)) # gets current price
-    return price
-
-def get_price_from_amazon_test():
-    url2 = "https://www.amazon.in/Apple-iPhone-14-512GB-Blue/dp/B0BDJH3V3Q/ref=sr_1_8?keywords=iphone+14&qid=1664871745&qu=eyJxc2MiOiI1LjM4IiwicXNhIjoiNS4xOSIsInFzcCI6IjMuMzcifQ%3D%3D&sr=8-8"
+    ur2 = "https://www.amazon.in/Apple-iPhone-14-256GB-Midnight/dp/B0BDJ6N5D6/ref=sr_1_11?crid=2GX239JVK66ZX&keywords=iphone+14&qid=1665371671&qu=eyJxc2MiOiI1LjM4IiwicXNhIjoiNS4xOSIsInFzcCI6IjMuMzcifQ%3D%3D&sprefix=iphone+1%2Caps%2C666&sr=8-11"    req = requests.get(url2, headers=HEADERS)
     req = requests.get(url2, headers=HEADERS)
     time.sleep(4)
     soup = BeautifulSoup(req.content,'lxml')
@@ -42,7 +29,7 @@ def get_price_from_amazon_test():
     return price
 
 def get_price_from_flipkart():
-    url1 = 'https://www.flipkart.com/apple-iphone-14-blue-512-gb/p/itm6f59f7f999d00?pid=MOBGHWFHYRWUSHCF&lid=LSTMOBGHWFHYRWUSHCFXIUNTH&marketplace=FLIPKART&q=iphone+14&store=tyy%2F4io&srno=s_1_2&otracker=search&otracker1=search&fm=search-autosuggest&iid=40d9e4bf-b8f5-47d7-810d-c5373f7d8265.MOBGHWFHYRWUSHCF.SEARCH&ppt=sp&ppn=sp&ssid=861kp9xhj40000001664802021951&qH=860f3715b8db08cd'
+    url1 = 'https://www.flipkart.com/apple-iphone-14-midnight-256-gb/p/itmdb32e3c997112?pid=MOBGHWFH4H3MMRAA&lid=LSTMOBGHWFH4H3MMRAAO7KNHD&marketplace=FLIPKART&q=iphone+14&store=tyy%2F4io&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=28412f92-2c72-4639-9c33-d56a23ce8398.MOBGHWFH4H3MMRAA.SEARCH&ppt=sp&ppn=sp&ssid=yhxuzzcrzk0000001665371510740&qH=860f3715b8db08cd'
     req = requests.get(url1)
     soup = BeautifulSoup(req.content,'html.parser')
     price = soup.find("div",class_ = "_30jeq3 _16Jk6d")
@@ -71,7 +58,7 @@ def append_to_csv(amz_price,flip_price):
 def check_header():
    itt = 1
    for i in poss_headers:
-      amz_price = get_price_from_amazon_test() 
+      amz_price = get_price_from_amazon() 
       if amz_price == None:
          HEADERS["User-Agent"] = i
          print(itt)
