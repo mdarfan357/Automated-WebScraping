@@ -39,9 +39,7 @@ def get_price_from_flipkart():
 
 
 
-def create_csv():
-    amz_price = get_price_from_amazon()
-    flip_price = get_price_from_flipkart()
+def create_csv(amz_price,flip_price):
     
     with open("price_track.csv",'w',encoding="utf8",newline="") as f:
         mywriter = writer(f)
