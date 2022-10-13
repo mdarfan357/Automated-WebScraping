@@ -21,7 +21,7 @@ HEADERS = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/5
             'Accept-Language': 'en-US, en;q=0.5'}
 
 def get_price_from_amazon():
-    ur2 = "https://www.amazon.in/Apple-iPhone-14-256GB-Midnight/dp/B0BDJ6N5D6/ref=sr_1_11?crid=2GX239JVK66ZX&keywords=iphone+14&qid=1665371671&qu=eyJxc2MiOiI1LjM4IiwicXNhIjoiNS4xOSIsInFzcCI6IjMuMzcifQ%3D%3D&sprefix=iphone+1%2Caps%2C666&sr=8-11"    
+    url2 = "https://www.amazon.in/Apple-iPhone-14-256GB-Midnight/dp/B0BDJ6N5D6/ref=sr_1_11?crid=2GX239JVK66ZX&keywords=iphone+14&qid=1665371671&qu=eyJxc2MiOiI1LjM4IiwicXNhIjoiNS4xOSIsInFzcCI6IjMuMzcifQ%3D%3D&sprefix=iphone+1%2Caps%2C666&sr=8-11"    
     req = requests.get(url2, headers=HEADERS)
     time.sleep(4)
     soup = BeautifulSoup(req.content,'lxml')
