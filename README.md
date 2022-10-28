@@ -25,13 +25,15 @@ The part that I love about this project is that all the components of this proje
 
 Documentation :
 --------------- 
-Check out the current price at Amazon [click here](https://www.amazon.in/Apple-iPhone-14-256GB-Midnight/dp/B0BDJ6N5D6/ref=sr_1_11?crid=2GX239JVK66ZX&keywords=iphone+14&qid=1665371671&qu=eyJxc2MiOiI1LjM4IiwicXNhIjoiNS4xOSIsInFzcCI6IjMuMzcifQ%3D%3D&sprefix=iphone+1%2Caps%2C666&sr=8-11)
+* Check out the current price at Amazon [click here](https://www.amazon.in/Apple-iPhone-14-256GB-Midnight/dp/B0BDJ6N5D6/ref=sr_1_11?crid=2GX239JVK66ZX&keywords=iphone+14&qid=1665371671&qu=eyJxc2MiOiI1LjM4IiwicXNhIjoiNS4xOSIsInFzcCI6IjMuMzcifQ%3D%3D&sprefix=iphone+1%2Caps%2C666&sr=8-11)
 
-Check out the current price at Flipkart [click here](https://www.flipkart.com/apple-iphone-14-midnight-256-gb/p/itmdb32e3c997112?pid=MOBGHWFH4H3MMRAA&lid=LSTMOBGHWFH4H3MMRAAO7KNHD&marketplace=FLIPKART&q=iphone+14&store=tyy%2F4io&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=28412f92-2c72-4639-9c33-d56a23ce8398.MOBGHWFH4H3MMRAA.SEARCH&ppt=sp&ppn=sp&ssid=yhxuzzcrzk0000001665371510740&qH=860f3715b8db08cd)
+* Check out the current price at Flipkart [click here](https://www.flipkart.com/apple-iphone-14-midnight-256-gb/p/itmdb32e3c997112?pid=MOBGHWFH4H3MMRAA&lid=LSTMOBGHWFH4H3MMRAAO7KNHD&marketplace=FLIPKART&q=iphone+14&store=tyy%2F4io&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=28412f92-2c72-4639-9c33-d56a23ce8398.MOBGHWFH4H3MMRAA.SEARCH&ppt=sp&ppn=sp&ssid=yhxuzzcrzk0000001665371510740&qH=860f3715b8db08cd)
 
-The data from these websites are collected and stored in the [prices_track.csv](../main/price_track.csv) file and this data is sent to the webapp for data visualization.
+* The data from these websites are collected and stored in the [prices_track.csv](../main/price_track.csv) file and this data is sent to the webapp for data visualization.
 
-Do visit the [web application](https://mdarfan357-price-track-appstreamlit-app-tr1vmx.streamlitapp.com/) to see the frontend of the project
+* Do visit the [web application](https://mdarfan357-price-track-appstreamlit-app-tr1vmx.streamlitapp.com/) to see the frontend of the project
+
+*Note that the following code runs everyday in order to store the changes in the product prices* 
 
 The skills used in this project :
 --------------- 
