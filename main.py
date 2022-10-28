@@ -71,6 +71,9 @@ def check_header():
       else:
             print(f"New Item : {amz_prize}")
             break
+   if amz_price == None:
+      raise Exception("Did not find the price")
+      return 
             
    
    
