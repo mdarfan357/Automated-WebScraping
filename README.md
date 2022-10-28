@@ -33,7 +33,7 @@ Documentation :
 
 * Do visit the [web application](https://mdarfan357-price-track-appstreamlit-app-tr1vmx.streamlitapp.com/) to see the frontend of the project
 
-*Note that the following code runs everyday in order to store the changes in the product prices* 
+*Note that the following code runs everyday automatically in order to store the changes in the product prices* 
 
 The skills used in this project :
 --------------- 
