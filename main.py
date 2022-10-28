@@ -69,7 +69,7 @@ def check_header():
           append_to_csv(amz_price,flip_price)
           break
       else: # debugging 
-            print(f"New Item : {amz_prize}")
+            print(f"Found unknown price : {amz_prize}")
          
 #    if amz_price == None:
    else:    
