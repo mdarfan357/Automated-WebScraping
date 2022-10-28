@@ -16,7 +16,7 @@ CI means new code changes to an app are regularly built, tested, and merged to a
 Solution :
 --------------- 
 
-In this project I have tried to use these concepts to built an app that gets data from an eCommerce website daily using CI/CD and the app displays the data pictorially in order to take better decisions about purchasing products. 
+In this project I have tried to use these concepts to built an application that gets data from an eCommerce website *daily* using CI/CD and the app displays the data pictorially in order to take better decisions about purchasing products. 
 
 In this project I have taken an example of the iPhone 14 but these methods can be applied to any product.
 
