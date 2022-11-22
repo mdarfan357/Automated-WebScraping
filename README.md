@@ -1,5 +1,7 @@
 # price_track
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://mdarfan357-streamlit-webcam-main-s4uxsp.streamlit.app/)
+
 ## Problem 
 In todays world products are available in many websites and these prices change daily with time. Due to these complexities it becomes overwhelming for an ordinary consumer to take smart decisions about their needs. In order to save users money and make it simple for any user to buy products on eCommerce platforms I have created an application that lets users track there products prices.
 
