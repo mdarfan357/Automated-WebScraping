@@ -1,4 +1,4 @@
-# Automated WebScraping
+# price_track
  
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://mdarfan357-price-track-appstreamlit-app-tr1vmx.streamlit.app/)
 
