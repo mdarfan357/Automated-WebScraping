@@ -1,5 +1,5 @@
-# price_track
-## Automated WebScraping
+# Automated WebScraping
+ 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://mdarfan357-price-track-appstreamlit-app-tr1vmx.streamlit.app/)
 
 ## Problem 
