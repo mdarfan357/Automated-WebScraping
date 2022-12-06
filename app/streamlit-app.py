@@ -28,9 +28,11 @@ st.area_chart(data1)
 st.markdown("<h3 style='text-align: center;'>This is a bar chart</h3>", unsafe_allow_html=True)
 st.bar_chart(data1)
 
-st.write()
+st.write(f"latest_flip: {latest_flip},latest_amz : {latest_amz}")
 latest_amz = int(data1[-1:]["Amazon price"])
 latest_flip = int(data1[-1:]["Flipkart price"])
+
+# print(f"latest_flip: {latest_flip},latest_amz : {latest_amz}")
 
 if latest_amz == latest_flip:
   st.markdown("<p style='text-align: center;'>Both websites have the same price for the following product.</p>", unsafe_allow_html=True)
