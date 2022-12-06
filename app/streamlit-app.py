@@ -34,7 +34,7 @@ latest_flip = int(data1[-1:]["Flipkart price"])
 
 if latest_amz > latest_flip:
   st.markdown("<p style='text-align: center;'>Amazon has the least price for the following product.</p>", unsafe_allow_html=True)
-if latest_amz > latest_flip:
+elif latest_amz < latest_flip:
   st.markdown("<p style='text-align: center;'>Flipkart has the lowest price for the following product.</p>", unsafe_allow_html=True)
 else:
   st.markdown("<p style='text-align: center;'>Both websites have the same price for the following product.</p>", unsafe_allow_html=True)
