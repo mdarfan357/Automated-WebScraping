@@ -61,15 +61,25 @@ def check_header():
          HEADERS["User-Agent"] = i
          print(itt)
          itt+=1
-      elif amz_price != None:
+      
+      elif int(amz_price) >=10000:
           print(f"Got header : {i}")
           amz_price = amz_price.string.replace("₹",'').replace(',','')
           amz_price = int(float(amz_price))
           flip_price = get_price_from_flipkart()      
           append_to_csv(amz_price,flip_price)
           break
+    #   elif amz_price != None:
+    #       print(f"Got header : {i}")
+    #       amz_price = amz_price.string.replace("₹",'').replace(',','')
+    #       amz_price = int(float(amz_price))
+    #       flip_price = get_price_from_flipkart()      
+    #       append_to_csv(amz_price,flip_price)
+    #       break
       else: # debugging 
-            print(f"Found unknown price : {amz_prize}")
+          print(f"Got header : {i}")
+          flip_price = get_price_from_flipkart()      
+          append_to_csv("N/A",flip_price)
          
 #    if amz_price == None:
    else:    
