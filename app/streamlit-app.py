@@ -9,8 +9,8 @@ os.chdir("../automated-webscraping")
 st.markdown("<h1 style='text-align: center;'>Price Tracker</h1>", unsafe_allow_html=True)
 st.image("https://editor.analyticsvidhya.com/uploads/80484Thumbnail.png")
 st.write("Here we use data collected from websites to display trends in product prices.")
-st.write("These help people take better descion about the product they wanna buy and the time at which they want to buy the product")
-
+st.write("These help people take better decision about the product they wanna buy and the time at which they want to buy the product")
+st.write('Please note that a "0" as the product price indicates that the product is not available at the moment')
 st.write("#### Dataset :")
 data = pd.read_csv("price_track.csv")
 
