@@ -5,7 +5,7 @@ import numpy as np
 import os
 # import seaborn as sns
 
-os.chdir("../")
+# os.chdir("../price_track")
 
 st.markdown("<h1 style='text-align: center;'>Price Tracker</h1>", unsafe_allow_html=True)
 st.image("https://editor.analyticsvidhya.com/uploads/80484Thumbnail.png")
@@ -14,25 +14,31 @@ st.write("These help people take better descion about the product they wanna buy
 
 st.write("#### Dataset :")
 data = pd.read_csv("price_track.csv")
+
+st.sidebar.write("Data size")
+data_size = st.sidebar.selectbox("How much data?",["6 Months","2 Months","1 Month","10 days"])
+
+if data_size == "6 Months":
+    data_size = 180
+    
+if data_size == "2 Months":
+    data_size = 60
+if data_size == "1 Month":
+    data_size = 30
+if data_size == "10 days":
+    data_size = 10
+
+st.dataframe(data.tail(data_size))
+
 data1 = data.drop(columns = ["Date"])
-st.write(data)
-# st.line_chart(data1)
-# st.button("Refresh")
 
-
-# st.subheader("")
-st.markdown("<h3 style='text-align: center;'>This is a line chart</h3>", unsafe_allow_html=True)
-st.line_chart(data1)  
-st.markdown("<h3 style='text-align: center;'>This is a area chart</h3>", unsafe_allow_html=True)
-st.area_chart(data1)
-st.markdown("<h3 style='text-align: center;'>This is a bar chart</h3>", unsafe_allow_html=True)
-st.bar_chart(data1)
+st.markdown("<h3 style='text-align: center;'>Price of the desired product</h3>", unsafe_allow_html=True)
+st.line_chart(data1.tail(data_size))  
 
 latest_amz = int(data1[-1:]["Amazon price"])
 latest_flip = int(data1[-1:]["Flipkart price"])
 st.write(f"latest_flip: {latest_flip},latest_amz : {latest_amz}")
 
-# print(f"latest_flip: {latest_flip},latest_amz : {latest_amz}")
 
 if latest_amz == latest_flip:
   st.markdown("<p style='text-align: center;'>Both websites have the same price for the following product.</p>", unsafe_allow_html=True)
@@ -54,8 +60,6 @@ _left, mid, _right,r1,r2 = st.columns(5)
 with mid:
    st.image("https://media0.giphy.com/media/R6gvnAxj2ISzJdbA63/giphy.gif?cid=511e7ad3cmz597iamlotymrf0egpx8ew3xkz592tbj9r40d0&rid=giphy.gif&ct=g",width=400)
 
-
-# st.markdown("<p style='text-align: center;'></p>", unsafe_allow_html=True)
 
 st.write("Please leave a like if you liked the website and share it with your friends.")
 
