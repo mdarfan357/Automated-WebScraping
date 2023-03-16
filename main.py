@@ -79,7 +79,7 @@ def check_header():
       else: # debugging 
           print(f"Got header : {i}")
           flip_price = get_price_from_flipkart()      
-          append_to_csv("N/A",flip_price)
+          append_to_csv(0,flip_price)
          
 #    if amz_price == None:
    else:    
