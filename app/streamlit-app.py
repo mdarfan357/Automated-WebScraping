@@ -3,9 +3,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 import os
-import seaborn as sns
+# import seaborn as sns
 
-os.chdir("../price_track")
+os.chdir("../")
 
 st.markdown("<h1 style='text-align: center;'>Price Tracker</h1>", unsafe_allow_html=True)
 st.image("https://editor.analyticsvidhya.com/uploads/80484Thumbnail.png")
@@ -28,9 +28,9 @@ st.area_chart(data1)
 st.markdown("<h3 style='text-align: center;'>This is a bar chart</h3>", unsafe_allow_html=True)
 st.bar_chart(data1)
 
-st.write(f"latest_flip: {latest_flip},latest_amz : {latest_amz}")
 latest_amz = int(data1[-1:]["Amazon price"])
 latest_flip = int(data1[-1:]["Flipkart price"])
+st.write(f"latest_flip: {latest_flip},latest_amz : {latest_amz}")
 
 # print(f"latest_flip: {latest_flip},latest_amz : {latest_amz}")
 
