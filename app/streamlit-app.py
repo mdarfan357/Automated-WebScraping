@@ -3,9 +3,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 import os
-# import seaborn as sns
 
-# os.chdir("../price_track")
+os.chdir("../price_track")
 
 st.markdown("<h1 style='text-align: center;'>Price Tracker</h1>", unsafe_allow_html=True)
 st.image("https://editor.analyticsvidhya.com/uploads/80484Thumbnail.png")
@@ -20,7 +19,6 @@ data_size = st.sidebar.selectbox("How much data?",["6 Months","2 Months","1 Mont
 
 if data_size == "6 Months":
     data_size = 180
-    
 if data_size == "2 Months":
     data_size = 60
 if data_size == "1 Month":
