@@ -12,7 +12,7 @@ CI/CD
 CI/CD (Continuous Integration and Continuous Deployment) is one of the important topics in software development. CI/CD is a method to frequently deliver apps to customers by introducing automation into the stages of app development. The main concepts attributed to CI/CD are continuous integration, continuous delivery, and continuous deployment.
 
 ## But what is CI/CD?
-CI means new code changes to an app are regularly built, tested, and merged to a shared repository. It’s a solution to the problem of having too many branches of an app in development at once that might conflict with each other.CD means developer’s changes to an application are automatically bug tested and uploaded to a repository.
+CI means new code changes to an app are regularly built, tested, and merged to a shared repository. It’s a solution to the problem of having too many branches of an app in development at once that might conflict with each other.CD means developer’s changes to an application are automatically bug tested and uploaded to a repository after which it is deployed to the cloud in the form of a webapp that people can interact with.
 
 
 Solution :
