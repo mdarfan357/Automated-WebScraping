@@ -14,7 +14,7 @@ st.write('Please note that a "0" as the product price indicates that the product
 st.write("#### Dataset :")
 data = pd.read_csv("price_track.csv")
 
-st.sidebar.write("Data size")
+st.sidebar.subheader("Data size ")
 data_size = st.sidebar.selectbox("How much data?",["6 Months","2 Months","1 Month","10 days"])
 
 if data_size == "6 Months":
