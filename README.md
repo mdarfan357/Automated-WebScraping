@@ -33,6 +33,8 @@ Documentation :
 
 * The data from these websites are collected and stored in the [prices_track.csv](../main/price_track.csv) file and this data is sent to the webapp for data visualization.
 
+* Please note that a "0" as the product price indicates that the product is not available at the moment 
+
 * Do visit the [web application](https://mdarfan357-price-track-appstreamlit-app-tr1vmx.streamlitapp.com/) to see the frontend of the project
 
 *Note that the following code runs everyday automatically in order to store the changes in the product prices* 
