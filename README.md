@@ -53,6 +53,6 @@ Issues :
 The issue with this project would be its Scalability. In order to prepare a dataset that has all the products hosted on an eCommerce website that an ordinary consumer would need, one would require a lot of computational resources which is not available to me as a student. Most of the resources used in this project is free.
 More over, there might also be other ways of doing this project.
 
-Alternate way of doing the same data scraping would be to use an API that fetches data for you. One such API is [Amazon Price API](https://rapidapi.com/ajmorenodelarosa/api/amazon-price1/). This was the more easy way of doing the data mining process but I as a developer wanted to use web scraping and CD to create my own dataset from scratch.
+Alternate way of doing the same data scraping would be to use an API that fetches data for you. One such API is [Amazon Price API](https://rapidapi.com/ajmorenodelarosa/api/amazon-price1/). This was the more easy way of doing the data collection process, but I choose to use web scraping and CD to create my own dataset from scratch.
 
 
