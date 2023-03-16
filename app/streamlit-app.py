@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import os
 
-os.chdir("../price_track")
+os.chdir("../automated-webscraping")
 
 st.markdown("<h1 style='text-align: center;'>Price Tracker</h1>", unsafe_allow_html=True)
 st.image("https://editor.analyticsvidhya.com/uploads/80484Thumbnail.png")
